@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "htt": "0.0.1",
+    "http": "0.0.1-security",
     "mochawesome": "6.1.1"
   },
   "devDependencies": {
