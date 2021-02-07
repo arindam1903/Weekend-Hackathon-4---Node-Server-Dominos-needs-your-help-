@@ -1,4 +1,4 @@
-const http = require("http");
+var http = require("http");
 
 const server = http.createServer((req, res)=> {
   if (req.url === "/welcome") {
