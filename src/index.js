@@ -2,7 +2,7 @@ const http=require("http");
 
 const server=http.createServer((req,res)=>{
   if (req.url==='/welcome'){
-      res.statusCode(200);
+      res.writeHead(200);
     res.write(('Welcome to Dominos!'));
     res.end();
     
