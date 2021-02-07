@@ -1,7 +1,6 @@
-var http = require("http");
+const http = require("http");
 
-const httpServer = http.createServer(handleServer);
-function handleServer(req, res) {
+const server = http.createServer((req, res)=> {
   if (req.url === "/welcome") {
     res.writeHead(200,{ "Content-Type": "text/plain" });
     res.write("Welcome to Dominos!");
@@ -20,5 +19,5 @@ function handleServer(req, res) {
     res.end("404 Not Found");
   }
 }
-httpServer.listen(8081);
+server.listen(8081);
 
