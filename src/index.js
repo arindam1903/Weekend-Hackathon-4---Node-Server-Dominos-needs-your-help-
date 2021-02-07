@@ -7,7 +7,7 @@ function handleServer(req, res) {
     res.write("Welcome to Dominos!");
     res.end();
   } else if (req.url === "/contact") {
-    res.writeHead(200,,{ "Content-Type": "application/json" });
+    res.writeHead(200,{ "Content-Type": "application/json" });
     res.write(
       JSON.stringify({
         phone: "18602100000",
