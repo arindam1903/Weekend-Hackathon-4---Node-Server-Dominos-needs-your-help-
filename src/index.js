@@ -13,9 +13,5 @@ const server=http.createServer((req,res)=>{
     }));
     res.end();
   }
-  else {
-    res.statusCode(404).write('error');
-    res.end();
-  }
 });
-server.listen(3000);
+server.listen(8081);
